@@ -98,9 +98,8 @@ function readStock(data) {
 }
 
 function feedDog() {
-  if(gameState != "Happy"){  
+    
   dog.addImage(happyDog);
-  }
     
     foodObj.updateFoodStock(foodObj.getFoodStock() - 1);
     database.ref('/').update({
